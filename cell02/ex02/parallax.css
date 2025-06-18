@@ -1,8 +1,10 @@
 .img1 {
-    position: fixed;
-    object-fit: cover;
-    width: 100%;
-    z-index: 1;
+        min-height: 500px;
+        background-image: url(bg1.jpeg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 .message {
     background-color: black;
@@ -14,6 +16,7 @@
 }
 
 .img2 {
+    background-image: url(bg2.jpg);
     object-fit: cover;
     width: 100%;
 }
