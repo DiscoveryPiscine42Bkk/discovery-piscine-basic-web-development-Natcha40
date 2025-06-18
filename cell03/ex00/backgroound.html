@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Change Background Color</title>
 </head>
 <body>
-    <button onclick="random_color()">click</button>
-    <script>
-        const random_color =() => {
-            const bgColor = 'rgb(${Math.floor(Math.randow()* 256)}, (${Math.floor(Math.randow()* 256)}, (${Math.floor(Math.randow()* 256)})'
-            document.body.style.background = bgColor
-        }
-    </script>
+   <div class="container">
+    <h1>Click the buttom to change the background color</h1>
+    <button id="changeColorBtn">Change Background Color</button>
+   </div>
+
+   <script src="script.js"></script>
 </body>
 </html>

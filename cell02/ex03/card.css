@@ -19,8 +19,8 @@
 }
 
 .img {
-    width: 200%;
-    min-width: 300px;
+    width: 100%;
+    min-height: 200px;
     background-image: url(pf1.png);
     background-position: center;
     background-repeat: no-repeat;
