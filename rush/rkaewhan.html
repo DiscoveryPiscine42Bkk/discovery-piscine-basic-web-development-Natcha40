@@ -1,29 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    .navbar {
-        display:flex;
-        justify-content: space-around;
-        margin-bottom: 60px;
-        border: solid black 1px;
-        background-color: rgb(127, 161, 255);
-        padding: 10px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>แนะนำคณะวิทยาศาสตร์ มหาวิทยาลัยสมมติ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
     }
-        h1 {
-            text-align: center;
-        }
-    </style>
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #0055aa;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="home.html"><div>Home</div></a>
-        <a href="njungsit.html"><div>njungsit</div></a>
-        <a href="rkaewhan.html"><div>rkaewhan</div></a>
+
+  <header>
+    <h1>คณะวิทยาศาสตร์</h1>
+    <p>มหาวิทยาลัยสมมติ</p>
+  </header>
+
+  <nav>
+    <a href="#about">เกี่ยวกับคณะ</a>
+    <a href="#departments">ภาควิชา</a>
+    <a href="#contact">ติดต่อ</a>
+  </nav>
+
+  <section id="about">
+    <div class="card">
+      <h2>เกี่ยวกับคณะ</h2>
+      <p>
+        คณะวิทยาศาสตร์ มุ่งเน้นการสร้างนักวิจัยและนักวิทยาศาสตร์ที่มีความรู้ความสามารถ
+        และมีคุณธรรมในการดำเนินงานด้านวิทยาศาสตร์และเทคโนโลยี
+      </p>
     </div>
-    <h1 class="name">rkaewhan</h1>
+  </section>
+
+  <section id="departments">
+    <div class="card">
+      <h2>ภาควิชา</h2>
+      <ul>
+        <li>ภาควิชาคณิตศาสตร์</li>
+        <li>ภาควิชาฟิสิกส์</li>
+        <li>ภาควิชาเคมี</li>
+        <li>ภาควิชาชีววิทยา</li>
+        <li>ภาควิชาวิทยาการคอมพิวเตอร์</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>ติดต่อ</h2>
+      <p>
+        โทร: 02-123-4567<br>
+        อีเมล: science@samutuniversity.ac.th<br>
+        ที่อยู่: 123 ถนนวิทยาศาสตร์ แขวงความรู้ เขตการศึกษา กรุงเทพฯ 10200
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 คณะวิทยาศาสตร์ มหาวิทยาลัยสมมติ</p>
+  </footer>
+
 </body>
 </html>
