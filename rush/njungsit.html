@@ -1,47 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information1</title>
-    <style>
-    .navbar {
-        display:flex;
-        justify-content: space-around;
-        margin-bottom: 60px;
-        border: solid black 1px;
-        background-color: rgb(127, 161, 255);
-        padding: 10px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-        h1 {
-            text-align: center;
-        }
-    </style>
 
-    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header .logo a {
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content: Info */
+    #info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    .info-container h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .info-container p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .contact-info a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    /* Add some styling for responsiveness */
+    @media (max-width: 768px) {
+      header nav ul {
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      #info {
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      .info-container h1 {
+        font-size: 28px;
+      }
+
+      .info-container p {
+        font-size: 16px;
+      }
+
+      .contact-info p {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="home.html"><div>Home</div></a>
-        <a href="njungsit.html"><div>njugsit</div></a>
-        <a href="rkaewhan.html"><div>rkaewhan</div></a>
-    </div>
-    <h1 class="name">njungsit</h1>
 
-    <div class="header">User profile card</div>
-
-    <div class="box">
-        <div class="card">
-            <div class="img"></div>
-            <div class="name">Natcha Jungsithichort</div>
-            <div class="text">คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</div>
-            <div class="text">ภาควิชาสาขาสถาปัตยกรรม(5ปี)</div>
-            <div class="social">
-                <a href="https://facebook.com/natcha.jungsithichort"><div class="facebook"></div></a>
-                <a href="https://www.instagram.com/n4tcha._?igsh=MWdibijVkbE84Nmg2OA%3D%3D&utm_source=qr"><div class="ig"</a>
-            </div>
-            <div class="contact">contact</div>
-        </div>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <a href="index.html">KMITL</a>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content: Name and Info -->
+  <section id="info">
+    <div class="info-container">
+      <h1>นางสาว ณัชชา จึงสิธิโชติ</h1>
+      <p>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</p>
+      <p>ภาควิชาครุศาสตร์สถาปัตยกรรมและการออกแบบ</p>
+      <p>สาขาสถาปัตยกรรม(5ปี)</p>
+      <div class="contact-info">
+        <p>Email:68030082@kmitl.com</p>
+        <p>เบอร์โทร:0926880889</p>
+        <p>Instagram: <a href="https://www.instagram.com/n4tcha._/" target="_blank">@yourprofile</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; ณัชชา จึงสิธิโชติ | All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
